@@ -62,8 +62,9 @@ class Picker extends React.Component {
 
         return (
             <React.Fragment>
-              { React.Children.only(this.props.children) }
+              {this.props.children}
               <TouchableNativeFeedback {...touchableProps}>
+                <View style={this.props.innerStyle} />
               </TouchableNativeFeedback>
             </React.Fragment>
         )
@@ -82,6 +83,7 @@ Picker.propTypes = {
     prompt: PropTypes.string,
     underlayColor: PropTypes.string,
     wrapperStyle: PropTypes.object,
+    innerStyle: PropTypes.object,
 	onOpen: PropTypes.func,
 	onClose: PropTypes.func,
     touchableBackground: PropTypes.any
@@ -92,6 +94,7 @@ Picker.defaultProps = {
     prompt: null,
     underlayColor: 'transparent',
     wrapperStyle: {},
+    innerStyle: {},
 	onOpen: null,
 	onClose: null,
     touchableBackground: null
