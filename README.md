@@ -7,7 +7,7 @@ This package is based on work from [https://github.com/tombailey/react-native-fi
 Since we are not in NPM registry you have to install this package via git.
 
 ```bash
-yarn add https://github.com/sleighdogs/react-native-android-native-picker.git#master
+yarn add https://github.com/joseandresromero/react-native-android-native-picker.git#master
 ```
 
 ### Android Setup
