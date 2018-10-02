@@ -61,11 +61,11 @@ class Picker extends React.Component {
         }
 
         return (
-            <TouchableNativeFeedback {...touchableProps}>
-
-                { React.Children.only(this.props.children) }
-
-            </TouchableNativeFeedback>
+            <React.Fragment>
+              { React.Children.only(this.props.children) }
+              <TouchableNativeFeedback {...touchableProps}>
+              </TouchableNativeFeedback>
+            </React.Fragment>
         )
     }
 }
